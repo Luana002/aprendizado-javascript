@@ -40,4 +40,21 @@ function gerarNumero() {
     }
 }
 
-//
+//Transformar a letra em maiuscula e minuscula
+const Maiuscula = document.getElementById("maiusculo");
+function geradorMaius() {
+   Maiuscula.innerText = Maiuscula.innerText.toUpperCase();
+}
+function removerMaius() {
+    Maiuscula.innerText = Maiuscula.innerText.toLowerCase();
+}
+
+// Trocar cor de fundo da web
+function corFundo() { // Math tem várias funções, random gera numeros aleatorios
+    const r = Math.floor(Math.random() * 256);
+    const g = Math.floor(Math.random() * 256);
+    const b = Math.floor(Math.random() * 256);
+
+    document.body.style.background = `rgb(${r},${g},${b})`;
+}
+
